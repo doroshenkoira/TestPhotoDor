@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000">
+
+   <!--<ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+       android:layout_weight="0.5"
+        android:background="@drawable/background"
+        android:scaleType="fitCenter" />-->
+    <com.photo.testphotodor.PinchImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="2dp"
+    android:layout_marginRight="2dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="8dp">
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/bSize"
+            android:text="CROP"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Rotate"
+            android:id="@+id/bRotate"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Back"
+            android:id="@+id/bBack"
+            android:background="@drawable/roundshapebtn"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Bright"
+            android:id="@+id/bBri"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Share"
+            android:id="@+id/bShare"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="SAVE"
+            android:id="@+id/bSave"
+            android:background="@drawable/roundshapebtn"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Filtres"
+            android:id="@+id/bFiltres"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Contrast"
+            android:id="@+id/bContr"
+            android:background="@drawable/roundshapebtn"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:id="@+id/llImages"
+            android:paddingTop="2dp"
+            android:foregroundGravity="center">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="ORIGINAL"
+                android:background="@drawable/roundshapebtn"
+                android:layout_marginRight="5dp"
+                android:id="@+id/ivOriginal"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="SNOW"
+                android:id="@+id/ivSnow"
+                android:background="@drawable/roundshapebtn"
+                android:layout_marginRight="5dp"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:text="SATURATION"
+                android:id="@+id/ivSaturation"
+                android:background="@drawable/roundshapebtn"
+                android:layout_marginRight="5dp"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="CORNERS"
+                android:id="@+id/ivCorner"
+                android:background="@drawable/roundshapebtn"
+                android:layout_marginRight="5dp"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/roundshapebtn"
+                android:text="BOOST RED"
+                android:id="@+id/ivBoost"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llBri"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Brightness"
+    android:id="@+id/tvBri"
+    android:textColor="#ffffff"
+    android:textSize="18dp" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sbBri"
+                android:max="255"
+                android:progress="5">
+
+            </SeekBar>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llContrast"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contrast"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:id="@+id/tvContr" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sbContr"
+                android:max="255"
+                android:progress="5"></SeekBar>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
