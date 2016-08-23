@@ -1,9 +1,4 @@
 <resources>
     <string name="app_name">TestPhotoDor</string>
-    <string-array name="filterslist">
-        <item>Filter1</item>
-        <item>Filter2</item>
-        <item>Filter3</item>
-        <item>Filter4</item>
-    </string-array>
+
 </resources>

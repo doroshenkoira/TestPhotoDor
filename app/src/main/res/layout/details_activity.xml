@@ -19,8 +19,8 @@
         android:layout_weight="0.5"
         android:layout_height="match_parent"
         android:background="@drawable/background"
-        android:layout_margin="5dp"
-        android:padding="5dp" />
+        android:layout_margin="10dp"
+        android:padding="10dp" />
     <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="170dp"
@@ -86,7 +86,7 @@
             android:id="@+id/bShare"
             android:background="@drawable/roundshapebtn"
             android:layout_marginRight="5dp"
-            android:textColor="#ffffff" />
+            android:textColor="#da08b7" />
 
         <Button
             android:layout_width="65dp"
@@ -94,7 +94,7 @@
             android:text="SAVE"
             android:id="@+id/bSave"
             android:background="@drawable/roundshapebtn"
-            android:textColor="#ffffff" />
+            android:textColor="#39f906" />
         <Button
             android:layout_width="65dp"
             android:layout_height="30dp"
@@ -110,10 +110,13 @@
             android:id="@+id/bContr"
             android:background="@drawable/roundshapebtn"
             android:layout_marginLeft="5dp"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textColor="#ffffff" />
     </LinearLayout>
-
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/HImages"
+    android:layout_height="match_parent">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -124,7 +127,7 @@
             android:foregroundGravity="center">
             <Button
                 android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:text="ORIGINAL"
                 android:background="@drawable/roundshapebtn"
                 android:layout_marginRight="5dp"
@@ -132,37 +135,37 @@
                 android:textSize="12dp" />
             <Button
                 android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:text="SNOW"
                 android:id="@+id/ivSnow"
                 android:background="@drawable/roundshapebtn"
                 android:layout_marginRight="5dp"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
             <Button
                 android:layout_width="75dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:text="SATURATION"
                 android:id="@+id/ivSaturation"
                 android:background="@drawable/roundshapebtn"
                 android:layout_marginRight="5dp"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
             <Button
                 android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:text="CORNERS"
                 android:id="@+id/ivCorner"
                 android:background="@drawable/roundshapebtn"
                 android:layout_marginRight="5dp"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
             <Button
                 android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/roundshapebtn"
                 android:text="BOOST RED"
                 android:id="@+id/ivBoost"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
         </LinearLayout>
-
+</HorizontalScrollView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -182,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/sbBri"
                 android:max="255"
-                android:progress="5">
+                android:progress="1">
 
             </SeekBar>
 
@@ -198,14 +201,14 @@
                 android:layout_height="wrap_content"
                 android:text="Contrast"
                 android:textColor="#ffffff"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:id="@+id/tvContr" />
             <SeekBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/sbContr"
                 android:max="255"
-                android:progress="5"></SeekBar>
+                android:progress="1"/>
 
         </LinearLayout>
 

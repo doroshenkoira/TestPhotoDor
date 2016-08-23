@@ -260,13 +260,14 @@ public class PinchImageView extends ImageView implements View.OnTouchListener {
         int width = drawable.getBitmap().getWidth();
         int height = drawable.getBitmap().getHeight();
         Bitmap cropedBitmap=drawable.getBitmap();
-        Canvas comboImage = new Canvas(cropedBitmap);
+        Bitmap mutableBitmap = cropedBitmap.copy(Bitmap.Config.ARGB_8888, true);//&lt;--true makes copy mutable
+
+        Canvas comboImage = new Canvas(mutableBitmap);
         Bitmap background = Bitmap.createScaledBitmap(drawable.getBitmap(),width, height, true);
 
-        comboImage.drawBitmap(background, mMatrix, null);
+       comboImage.drawBitmap(background, mMatrix, null);
 
-        return cropedBitmap;
-
+        return mutableBitmap;
     }
     @Override
     public boolean onTouch(View v, MotionEvent event) {
