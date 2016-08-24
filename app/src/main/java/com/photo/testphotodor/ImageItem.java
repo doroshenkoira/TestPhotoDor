@@ -13,7 +13,6 @@ class ImageItem {
 
         this.filePath=filePath;
     }
-
    // public Bitmap getImage() {
      //   return image;
    // }
