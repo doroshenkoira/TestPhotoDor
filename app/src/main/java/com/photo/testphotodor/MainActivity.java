@@ -256,7 +256,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         return Uri.fromFile(getOutputMediaFile(type));
     }
 
-
     private File getOutputMediaFile(int type) throws FileNotFoundException {
 
         File mediaStorageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES + "/Camera");

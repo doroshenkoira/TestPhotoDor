@@ -22,7 +22,6 @@ class ImageItem {
    //     this.image = image;
    // }
 
-
     public String getfilePath() {
         return filePath;
     }

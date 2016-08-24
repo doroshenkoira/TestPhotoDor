@@ -264,7 +264,6 @@ public class PinchImageView extends ImageView implements View.OnTouchListener {
 
         Canvas comboImage = new Canvas(mutableBitmap);
         Bitmap background = Bitmap.createScaledBitmap(drawable.getBitmap(),width, height, true);
-
        comboImage.drawBitmap(background, mMatrix, null);
 
         return mutableBitmap;

@@ -155,7 +155,6 @@
         <Button
             android:layout_width="65dp"
             android:layout_height="30dp"
-
             android:id="@+id/bSize"
             android:text="CROP"
             android:background="@drawable/roundshapebtn"

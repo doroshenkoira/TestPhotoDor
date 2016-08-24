@@ -328,8 +328,15 @@ try {
         String imgName = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
         File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES + "/Redactor");
-        path.mkdirs();
-        File imageFile = new File(path, imgName + ".png"); // Имя нового файла
+
+    if (! path.exists()) {
+        if (! path.mkdirs()) {
+            Log.d("Photoredactor", "failed to create directory");
+            return null;
+        }
+    }
+
+    File imageFile = new File(path, imgName + ".png"); // Имя нового файла
         FileOutputStream out = new FileOutputStream(imageFile);
         try {
             bm.compress(Bitmap.CompressFormat.PNG, 100, out); // Сжатие изображения
